@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "MainFontLight";
+    src: url(../font/BellGothicStd-Light.otf);
+    }
+* {
+    font-family: "MainFontLight";
+}
