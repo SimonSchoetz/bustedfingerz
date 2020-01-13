@@ -1,13 +1,26 @@
 @use "variables" as *;
 
 nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
     ul {
         display: flex;
         flex-flow: row;
     }
 
     a {
-    color: $color-main;
+        border: 1px solid $color-main;
+        padding: 1rem;
+        font-size: 1.5rem;
+
+        color: $color-main;
+        &:hover {
+            color: $color-hover;
+            background-color: $bg-hover; 
+            border: 1px solid $color-hover; 
+        }
     }
 
 }

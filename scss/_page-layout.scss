@@ -5,11 +5,13 @@
 html {
     display: flex;
     justify-content: center;
+
 }
 body {
     max-width: 1600px;
     display: grid;
     grid-template-rows: 1fr 9fr;
+    padding: 1rem;
 }
 /*******************
   Upper Section

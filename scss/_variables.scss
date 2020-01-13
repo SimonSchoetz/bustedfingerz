@@ -5,8 +5,10 @@ Font Stuff
 *********/
 $mf-light: "MainFontLight";
 $mf-bold: "MainFontBold";
-$color-main: rgb(13, 11, 13);
-
 /***********
-Calculations
+    Color
 ***********/
+$color-main: rgba(0, 0, 0, 0.9);
+$color-hover: rgb(250,250,250);
+$bg-color: rgb(203, 201, 203);
+$bg-hover: rgba(0, 0, 0, 0.8);
