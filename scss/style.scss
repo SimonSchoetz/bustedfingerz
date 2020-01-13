@@ -1,3 +1,9 @@
 /*Main scss style sheet*/
 @use "base" as *;
 @use "variables" as *;
+@use "grid-structure" as*;
+
+/*Busted Fingerz .gif*/
+aside img {
+    width: 100%;
+}

@@ -42,11 +42,36 @@
     <main>
         <nav class="AP_nav">
             <lu>
-                <li><a href="#" class="current-item" onclick="navFunction('home')">Home</a></li>
-                <li><a href="#" onclick="navFunction('music')">Music</a></li>
-                <li><a href="#" onclick="navFunction('news')">News</a></li>
-                <li><a href="#" onclick="navFunction('contact')">Contact</a></li>
-                <li><a href="#" onclick="navFunction('impressum')">Impressum</a></li>
+                <li>
+                    <label id="home-label" for="nav-home">
+                        Home
+                        <input id="nav-home" type="radio" name="main-nav" checked="checked" onclick="navFunction()">
+                    </label>
+                </li>
+                <li>
+                    <label id="music-label" for="nav-music">
+                        Music
+                        <input id="nav-music" type="radio" name="main-nav" onclick="navFunction()">
+                    </label>
+                </li>
+                <li>
+                    <label id="news-label" for="nav-news">
+                        News
+                        <input id="nav-news" type="radio" name="main-nav" onclick="navFunction()">
+                    </label>
+                </li>
+                <li>
+                    <label id="contact-label" for="nav-contact">
+                        Contact
+                        <input id="nav-contact" type="radio" name="main-nav" onclick="navFunction()">
+                    </label>
+                </li>
+                <li>
+                    <label id="impressum-label" for="nav-impressum">
+                        Impressum
+                        <input id="nav-impressum" type="radio" name="main-nav" onclick="navFunction()">
+                    </label>
+                </li>
             </lu>
         </nav>
 
