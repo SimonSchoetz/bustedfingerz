@@ -1,5 +1,14 @@
 /*Variables for Busted Website*/
-@use "typography";
-
+@use "typography" as *;
+/*********
+Font Stuff
+*********/
 $mf-light: "MainFontLight";
 $mf-bold: "MainFontBold";
+
+/***********
+Calculations
+***********/
+
+$one-third-vw: calc(100vw/3);
+$two-third-vw: calc(100vw/3*2);

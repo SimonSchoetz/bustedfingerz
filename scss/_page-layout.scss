@@ -1,0 +1,28 @@
+@use "variables" as *;
+/*******************
+    Whole Page
+*******************/
+html {
+    display: flex;
+    justify-content: center;
+}
+body {
+    max-width: 1600px;
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+}
+/*******************
+  Upper Section
+*******************/
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+/*******************
+   Lower Section
+*******************/
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
