@@ -1,9 +1,9 @@
 /*Main scss style sheet*/
-@use "base" as *;
-@use "variables" as *;
-@use "page-layout" as*;
-@use "typography" as*;
-@use "main-nav" as *;
+@use "base";
+@use "variables";
+@use "page-layout";
+@use "typography";
+@use "main-nav";
 
 /*Busted Fingerz .gif*/
 aside img {

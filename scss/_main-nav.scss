@@ -1,0 +1,14 @@
+@use "variables" as *;
+
+nav {
+    ul {
+        display: flex;
+        flex-flow: row;
+    }
+
+    a {
+    color: $color-main;
+    }
+
+}
+
