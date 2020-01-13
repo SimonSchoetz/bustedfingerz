@@ -4,6 +4,8 @@ This repo is to refine the Busted Fingerz website started in the orientation cou
 
 ## Brainstorm Notes
 
+- instead of hiding -> opacity (everything gets loaded right away)
+- like in a  \<form action="potential link text">?does this work?
 
 
 ## Plans (could be projects)

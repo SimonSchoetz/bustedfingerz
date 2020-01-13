@@ -1,0 +1,23 @@
+{
+  "name": "7_busted_website",
+  "version": "1.0.0",
+  "description": "This repo is to refine the Busted Fingerz website started in the orientation course in June'19 with the new knowledge about Javascipt and better understanding of html semantics.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-css": "dart-sass --watch scss/style.scss style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SimonSchoetz/bustedfingerz.git"
+  },
+  "author": "Simon Schötz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SimonSchoetz/bustedfingerz/issues"
+  },
+  "homepage": "https://github.com/SimonSchoetz/bustedfingerz#readme",
+  "devDependencies": {
+    "dart-sass": "^1.24.4"
+  }
+}
