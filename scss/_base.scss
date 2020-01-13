@@ -1,9 +1,5 @@
 /*Global style for Busted Website*/
 @use "variables" as *;
-
-
-
-
 * {
     padding: 0;
     margin: 0;
@@ -11,5 +7,6 @@
     list-style-type: none;
     text-decoration: none;
     font-family: $mf-light;
+    line-height: 1.3;
 }
 
