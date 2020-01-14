@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch-css": "dart-sass --watch scss/style.scss style.css --style compressed"
+    "watch-css": "dart-sass --watch scss/style.scss style.css --style compressed",
+    "prefix": "postcss *.css --use autoprefixer -d build/"
   },
   "repository": {
     "type": "git",
