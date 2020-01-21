@@ -1,0 +1,60 @@
+@use "variables" as *;
+
+.fader { /*absolute box size*/
+    position: absolute;
+    width: 50px;
+    height: 652px;
+
+    input { /*clickable area*/
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: block;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 1;
+    }
+    div {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-style: solid;
+        border-width: 1px;
+        overflow: hidden;
+    }
+    div .slide { /*Slider Size*/
+        position:absolute;
+        margin-left: 5px;
+        margin-top: 30px;
+        width: 80%;
+        height: 20px;
+        border: solid 1px;
+    /* background-color: rgb(100,100,100);*/
+        transition: 0.2s;
+    }
+    input:checked + div .slide { /*slide range*/
+        transform: translateY(570px);
+    }
+    .slide:before { /*Upper Area*/
+    /*   content: '';
+        position:absolute;
+        text-align: center;
+        width: 100%;
+        height: 2250%;
+        top: -2250%;
+        line-height: 2250%;
+        color: rgb(250,250,250);
+        background-color: rgb(55,55,55);*/
+    }
+    .slide:after { /*Bottom Area*/
+    /*    content: '';
+        position: absolute;
+        text-align: center;
+        width: 2250%;
+        height: 2250%;
+        bottom: -2250%;
+        line-height: 100%;
+        color: rgb(0,0,0);
+        background-color: rgb(200,200,200);*/
+    }
+}
