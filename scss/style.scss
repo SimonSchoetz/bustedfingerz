@@ -4,11 +4,13 @@
 @use "page-layout";
 @use "typography";
 @use "main-nav";
-@use "switch";
+@use "switch" as *;
 
 /*Busted Fingerz .gif*/
-aside img {
-    width: 100%;
+aside {
+    img{
+        width: 80%;
+    }
 }
 
 h1 {
@@ -22,3 +24,4 @@ h1 {
         width: 100%;
     }
 }
+
