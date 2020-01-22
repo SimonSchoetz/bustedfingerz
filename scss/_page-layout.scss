@@ -11,7 +11,7 @@ body {
     max-width: 1600px;
     display: grid;
     grid-template-rows: 1fr 9fr;
-    padding: 2rem;
+    margin: 0 2rem;
 }
 /*******************
   Upper Section
@@ -21,7 +21,9 @@ header {
     top: 0;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    padding-bottom: 2rem;
+    padding: 2rem 0;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: $bg-gradient;
 }
 
 /*******************

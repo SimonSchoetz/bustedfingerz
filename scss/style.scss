@@ -1,6 +1,6 @@
 /*Main scss style sheet*/
 @use "base";
-@use "variables";
+@use "variables" as *;
 @use "page-layout";
 @use "typography";
 @use "main-nav";
@@ -16,7 +16,7 @@ aside {
 h1 {
     display: flex;
     align-items: center;
-    font-size: 6.5vh;
+    font-size: 3.05vw;
 }
 
 #main-page {

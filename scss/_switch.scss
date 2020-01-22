@@ -3,11 +3,12 @@
 .fader-box {
     position: absolute;
     right: 5vw;
-    top: -85px;
+    top: -93px;
 
     .fader { /*absolute box size*/
         position: absolute;
         width: 3.5vw;
+        max-width: 50px;
         height: 95vh;
 
         input { /*clickable area*/
