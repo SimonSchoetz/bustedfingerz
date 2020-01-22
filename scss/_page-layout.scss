@@ -2,28 +2,34 @@
 /*******************
     Whole Page
 *******************/
-html {
-    display: flex;
-    justify-content: center;
+// html {
+//     display: flex;
+//     justify-content: center;
 
-}
+// }
 body {
-    max-width: 1600px;
+    max-width: 1440px;
     display: grid;
     grid-template-rows: 1fr 9fr;
-    margin: 0 2rem;
+    margin: 0 auto;
 }
 /*******************
   Upper Section
 *******************/
 header {
-    position: sticky;
-    top: 0;
     display: grid;
     grid-template-columns: 1fr 2fr;
     padding: 2rem 0;
     background-color: rgba(0, 0, 0, 0);
-    background-image: $bg-gradient;
+    
+    z-index: 1;
+    nav {
+        background-image: $bg-gradient;
+        ul {
+        position: fixed;
+        top: 2rem;
+        }
+    }
 }
 
 /*******************
@@ -35,9 +41,17 @@ main {
     
 
     aside {
-        display: flex;  
-        position: sticky;
-        top: 20px;
-        
+        // display: flex;  
+        position: relative;
+        // top: 200px;
+        // width: 31.6%;
+        z-index: 1;
+    }
+
+    #main-page {
+        position: relative;
+        // width: 200%;
+        // left: 31.6vw;
+        z-index: 0;
     }
 }
