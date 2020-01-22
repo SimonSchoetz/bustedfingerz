@@ -3,7 +3,7 @@
 .fader-box {
     position: relative;
     min-width: 50px;
-    height: 90vh;
+    height: 93vh;
     max-height: 775px;
     margin: 0 2rem;
 
@@ -23,7 +23,7 @@
             z-index: 1;
 
             &:checked + div .slide { /*slide range*/
-            transform: translateY(79vh);
+            transform: translateY(82vh);
             }
         }
         div {

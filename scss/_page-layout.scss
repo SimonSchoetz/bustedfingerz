@@ -17,7 +17,7 @@ body {
 
 .hi-lo-divider {
     display: grid;
-    grid-template-rows: 1fr 9fr;
+    grid-template-rows: 80px 1fr;
 
 }
 
@@ -68,6 +68,9 @@ aside {
                     margin-right: 1rem;
                 }
             }
+        }
+        #music {
+            display: none;
         }
         
     }
