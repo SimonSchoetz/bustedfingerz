@@ -4,7 +4,7 @@
 @use "page-layout";
 @use "typography";
 @use "main-nav";
-@use "switch" as *;
+@use "switch";
 
 /*Busted Fingerz .gif*/
 aside {
@@ -16,7 +16,7 @@ aside {
 h1 {
     display: flex;
     align-items: center;
-    font-size: 5vh;
+    font-size: 6.5vh;
 }
 
 #main-page {
