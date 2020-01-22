@@ -31,7 +31,7 @@ aside {
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        font-size: 3.15rem;
+        font-size: 2.9rem;
     }
     img {/*Busted Fingerz .gif*/
         width: 100%;
@@ -42,12 +42,6 @@ aside {
     }
 }
 
-// @media (max-width: 1265) {
-//     h1 {
-//         font-size: 1vw;
-//     }
-
-// }
 
 /*******************
    Right Section
@@ -62,6 +56,19 @@ aside {
     }
     main {
         margin-top: 1rem;
+        #main-page {
+            img {
+                margin-bottom: 1rem;
+            }
+            div {
+                display: flex;
+                font-size: 1.3rem;
+
+                & p:first-child {
+                    margin-right: 1rem;
+                }
+            }
+        }
         
     }
 }
