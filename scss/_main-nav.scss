@@ -1,15 +1,11 @@
 @use "variables" as *;
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-
     ul {
         display: flex;
         flex-flow: row;
     }
-
+    
     li {
         &:not(:first-child) {
             margin-left: 2vw;
@@ -28,6 +24,5 @@ nav {
             border: 1px solid $color-hover; 
         }
     }
-
 }
 

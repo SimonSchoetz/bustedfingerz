@@ -15,24 +15,12 @@
 </head>
 
 <body>
-    <header>
-        <h1>BUSTED FINGERZ</h1>
-        <nav class="AP_nav">
-            <ul>
-                <li><a href="#" class="current-item" onclick="navFunction('home')">Home</a></li>
-                <li><a href="#" onclick="navFunction('music')">Music</a></li>
-                <li><a href="#" onclick="navFunction('news')">News</a></li>
-                <li><a href="#" onclick="navFunction('contact')">Contact</a></li>
-                <li><a href="#" onclick="navFunction('impressum')">Impressum</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <aside>
+    <aside>
+        <div class="hi-lo-divider">
+            <h1>BUSTED&nbsp;FINGERZ</h1>
             <div>
                 <img src="img/busted_gif.gif" alt="Gif of morphing Busted Fingerz logo">
-                <div class="li_sm">
+                <div>
                     <lu>
                         <li><a href="https://de-de.facebook.com/bustedfingerz/">FACEBOOK</a></li>
                         <li><a href="https://soundcloud.com/bustedfingerz/" target="_blank">SOUNDCLOUD</a></li>
@@ -41,21 +29,37 @@
                     </lu>
                 </div>
             </div>
-            <div class="fader-box">
-                <div class="fader">
-                    <input type="checkbox" onclick="PageSwitch()">
-                    <div>
-                        <span class="slide"></span>
-                    </div>
+        </div>
+        <div class="fader-box">
+            <div class="fader">
+                <input type="checkbox" onclick="PageSwitch()">
+                <div>
+                    <span class="slide"></span>
                 </div>
             </div>
-        </aside>
-        <section id="main-page">
-            <img src="img/busted_fingerz_live.png" alt="Busted Fingerz live in black and white">
-        </section>
+        </div>
+    </aside>
+    <section id="artist-page" class="hi-lo-divider">
+        <header>
+            <nav class="AP_nav">
+                <ul>
+                    <li><a href="#" class="current-item" onclick="navFunction('home')">Home</a></li>
+                    <li><a href="#" onclick="navFunction('music')">Music</a></li>
+                    <li><a href="#" onclick="navFunction('news')">News</a></li>
+                    <li><a href="#" onclick="navFunction('contact')">Contact</a></li>
+                    <li><a href="#" onclick="navFunction('impressum')">Impressum</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    </main>
+        <main>
+            
+            <section id="main-page">
+                <img src="img/busted_fingerz_live.png" alt="Busted Fingerz live in black and white">
+            </section>
 
+        </main>
+    </section>
 </body>
 
 </html>
