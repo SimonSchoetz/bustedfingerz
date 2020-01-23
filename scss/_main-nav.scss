@@ -1,7 +1,7 @@
 @use "variables" as *;
 
 nav {
-    
+
     background-color: $color-invisible;
     a {
         border: 1px solid $color-main;
@@ -11,22 +11,23 @@ nav {
 
         &:hover {
             color: $color-hover;
-            background-color: $bg-dark; 
-            border: 1px solid $color-hover; 
+            background-color: $bg-dark;
+            border: 1px solid $color-hover;
         }
 
         &.active {
-            // border-width: 2px;
-            background-color: $bg-darker;
+            border-width: 0;
+            background-color: $bg-color;
             &:hover {
                 color: $color-main;
-                background-color: $bg-darker;
-                border: 1px solid $color-main;
+                // border-width: 1px;
+                // background-color: $bg-color;
+                // border:  $color-main;
                 cursor: context-menu;
             }
         }
     }
 
-    
+
 }
 
