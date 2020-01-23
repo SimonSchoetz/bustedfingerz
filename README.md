@@ -7,6 +7,7 @@ This repo is to refine the Busted Fingerz website started in the orientation cou
 - instead of hiding -> opacity (everything gets loaded right away)
 - like in a  \<form action="potential link text">?does this work?
 - flickering BF logo casts light/shadow over the page
+- custom curser made of BF logo?
 
 
 ## Plans (could be projects)
