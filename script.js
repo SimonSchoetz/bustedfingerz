@@ -1,4 +1,7 @@
-
+/**
+ * Since Nodelists appear like an array but not methods are working there, 
+ * you have to iterate through them with a for loop
+ */
 
 const navFunction = fromNav => {
     //fromNav = class name of the clicked nav button
