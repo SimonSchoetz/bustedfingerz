@@ -1,19 +1,39 @@
-const navFunction = navInput => {
-    const classes = ["home", "music", "news", "contact", "impressum"];
-    const a = document.querySelector(`.${navInput}`);
-    console.log("classlist 1: " + a.classList[1]);
-    console.log("classlist 0: " + a.classList[0]);
-    console.log("navInput: " + navInput)
-    console.log(typeof a.classList[1])
+const navFunction = fromNav => {
+    const navInput = document.querySelector(`.${fromNav}`);
+    console.log("navInput: " + navInput);
 
-    if (a.classList[1] === undefined) {
-        a.classList.add("active");
+
+    //If pressed nav doesn't contain "active" in it's class list
+    if (!navInput.classList.contains("active")) {
+        const nodeList = document.querySelectorAll("nav a");
+        console.log(document.querySelectorAll("nav a").length)
+        console.log("Nav List: " + nodeList)
+
+        for (let i = 0; i < nodeList.length; i++) {
+            // check if classList contains "active" and delete it
+            if (nodeList[i].classList.contains("active")) {
+                nodeList[i].classList.remove("active")
+            }
+            // when current classList = fromNav input, add "active"
+            if (nodeList[i].classList.contains(fromNav)) {
+                nodeList[i].classList.add("active")
+            }
+
+        }
+
+
+
+        // navList.forEach(el => {
+        //     if (el.contains("active")) {
+        //         el.classList.remove("active")
+        //     }
+        // })
     }
-    // classes.forEach(input => {
-    //     if (navInput === input) {
-    //         a.classList.add("active")
-    //     } else {
-    //         a.classList.remove("active")
-    //     }
-    // })
+
 }
+
+
+
+    // if pressed nav button is already active, do nothing 
+    // if (navInput.classList.contains("active") && navInput.classList.contains(navInput)) { return null }
+
