@@ -1,14 +1,19 @@
+
+
 const navFunction = fromNav => {
     //fromNav = class name of the clicked nav button
     const navInput = document.querySelector(`.${fromNav}`);
 
     //If pressed nav doesn't contain "active" in its class list
     if (!navInput.classList.contains("active")) {
-        //returns nodeList of the nav a's
-        const nodeList = document.querySelectorAll("nav a");
+        /**
+        * Switch .active on click in the Nav
+        */
+        //NodeList of all as nav
+        const navNodeList = document.querySelectorAll("nav a");
         //iterating nodeList
-        for (let i = 0; i < nodeList.length; i++) {
-            const item = nodeList[i].classList;
+        for (let i = 0; i < navNodeList.length; i++) {
+            const item = navNodeList[i].classList;
             // check if classList contains "active" and delete it
             if (item.contains("active")) {
                 item.remove("active")
@@ -18,6 +23,23 @@ const navFunction = fromNav => {
                 item.add("active")
             }
 
+        }
+        /**
+        * Change display property on sections
+        */
+        //NodeList of all sections in main
+        const sectionNodeList = document.querySelectorAll("main section");
+        //iterating nodeList
+        for (let i = 0; i < sectionNodeList.length; i++) {
+            const item = sectionNodeList[i].classList;
+            // check if classList contains .invisible and if not, add it
+            if (!item.contains("invisible")) {
+                item.add("invisible")
+            }
+            // when current classList = fromNav input, remove .invisible
+            if (item.contains(fromNav)) {
+                item.remove("invisible")
+            }
         }
     }
 }

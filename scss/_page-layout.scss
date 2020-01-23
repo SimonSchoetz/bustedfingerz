@@ -72,7 +72,7 @@ aside {
     }
     main {
         margin-top: 1rem;
-        .main-page {
+        .home-page {
             img {
                 margin-bottom: 1rem;
                 width: 100%;
@@ -86,15 +86,10 @@ aside {
                 }
             }
         }
-        .music-page {
+        .invisible {
             display: none;
         }
-        .news-page {
-            display: none;
-        }
-        .contact-page {
-            display: none;
-        }
+  
         
     }
 }
