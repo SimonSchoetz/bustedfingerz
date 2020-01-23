@@ -39,6 +39,9 @@ aside {
     }
     a {
         font-size: 2rem;
+        &:hover {
+            font-family: $mf-bold;
+        }
     }
 }
 
