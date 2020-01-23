@@ -55,8 +55,18 @@ aside {
         margin-top: 1rem;/*Compensates nav-padding, Important to align,*/
         background-color: $color-invisible;
         background-image: $bg-gradient;
+
         nav {
-            background-color: $color-invisible;
+            ul {
+            display: flex;
+            flex-flow: row;
+            }
+            
+            li {
+                &:not(:first-child) {
+                    margin-left: 2vw;
+                }
+            }
         }
         
     }

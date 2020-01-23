@@ -1,17 +1,8 @@
 @use "variables" as *;
 
 nav {
-    ul {
-        display: flex;
-        flex-flow: row;
-    }
     
-    li {
-        &:not(:first-child) {
-            margin-left: 2vw;
-        }
-    }
-
+    background-color: $color-invisible;
     a {
         border: 1px solid $color-main;
         padding: 1rem;
@@ -20,9 +11,22 @@ nav {
 
         &:hover {
             color: $color-hover;
-            background-color: $bg-hover; 
+            background-color: $bg-dark; 
             border: 1px solid $color-hover; 
         }
+
+        &.active {
+            // border-width: 2px;
+            background-color: $bg-darker;
+            &:hover {
+                color: $color-main;
+                background-color: $bg-darker;
+                border: 1px solid $color-main;
+                cursor: context-menu;
+            }
+        }
     }
+
+    
 }
 
