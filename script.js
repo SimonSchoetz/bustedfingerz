@@ -4,12 +4,12 @@ const navFunction = fromNav => {
     //fromNav = class name of the clicked nav button
     const navInput = document.querySelector(`.${fromNav}`);
 
-    //If pressed nav doesn't contain "active" in its class list
+    //If clicked nav doesn't contain .active in its class list
     if (!navInput.classList.contains("active")) {
         /**
         * Switch .active on click in the Nav
         */
-        //NodeList of all as nav
+        //NodeList of all a in nav
         const navNodeList = document.querySelectorAll("nav a");
         //iterating nodeList
         for (let i = 0; i < navNodeList.length; i++) {
