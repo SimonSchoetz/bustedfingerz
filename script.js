@@ -1,39 +1,23 @@
 const navFunction = fromNav => {
+    //fromNav = class name of the clicked nav button
     const navInput = document.querySelector(`.${fromNav}`);
-    console.log("navInput: " + navInput);
 
-
-    //If pressed nav doesn't contain "active" in it's class list
+    //If pressed nav doesn't contain "active" in its class list
     if (!navInput.classList.contains("active")) {
+        //returns nodeList of the nav a's
         const nodeList = document.querySelectorAll("nav a");
-        console.log(document.querySelectorAll("nav a").length)
-        console.log("Nav List: " + nodeList)
-
+        //iterating nodeList
         for (let i = 0; i < nodeList.length; i++) {
+            const item = nodeList[i].classList;
             // check if classList contains "active" and delete it
-            if (nodeList[i].classList.contains("active")) {
-                nodeList[i].classList.remove("active")
+            if (item.contains("active")) {
+                item.remove("active")
             }
             // when current classList = fromNav input, add "active"
-            if (nodeList[i].classList.contains(fromNav)) {
-                nodeList[i].classList.add("active")
+            if (item.contains(fromNav)) {
+                item.add("active")
             }
 
         }
-
-
-
-        // navList.forEach(el => {
-        //     if (el.contains("active")) {
-        //         el.classList.remove("active")
-        //     }
-        // })
     }
-
 }
-
-
-
-    // if pressed nav button is already active, do nothing 
-    // if (navInput.classList.contains("active") && navInput.classList.contains(navInput)) { return null }
-
