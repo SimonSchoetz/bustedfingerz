@@ -1,5 +1,5 @@
 /**
- * Since Nodelists appear like an array but not methods are working there, 
+ * Since Nodelists appear like an array but no methods are working there, 
  * you have to iterate through them with a for loop
  */
 
