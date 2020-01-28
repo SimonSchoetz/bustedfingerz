@@ -11,4 +11,8 @@
     font-family: $mf-light;
     line-height: 1.3;
     transition: 0.1s;
+    #mastering {
+        color: $color-main-se;
+        background-color: $bg-color-se;
+    }
 }

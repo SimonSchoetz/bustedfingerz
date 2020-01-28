@@ -32,7 +32,7 @@
         </div>
         <div class="fader-box">
             <div class="fader">
-                <input type="checkbox" onclick="pageSwitch()">
+                <input id="switch" type="checkbox" onclick="pageSwitch()">
                 <div>
                     <span class="slide"></span>
                 </div>
@@ -42,7 +42,7 @@
     <section id="artist-page" class="hi-lo-divider">
         <header>
             <nav>
-                <ul>
+                <ul id="ap-nav">
                     <li><a href="#" class="home active" onclick="navFunction('home')">Home</a></li>
                     <li><a href="#" class="music" onclick="navFunction('music')">Music</a></li>
                     <li><a href="#" class="news" onclick="navFunction('news')">News</a></li>

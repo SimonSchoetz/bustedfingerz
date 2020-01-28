@@ -4,8 +4,8 @@ This repo is to refine the Busted Fingerz website started in the orientation cou
 
 ## Brainstorm Notes
 
-- instead of hiding -> opacity (everything gets loaded right away)
-- like in a  \<form action="potential link text">?does this work?
+- instead of hiding -> opacity (everything gets loaded right away) (-> But then it will take up space)
+- like in a  \<form action="potential link text">?does this work? (-> React apparently will fix the url thing)
 - flickering BF logo casts light/shadow over the page
 - custom curser made of BF logo?
 
@@ -13,11 +13,11 @@ This repo is to refine the Busted Fingerz website started in the orientation cou
 ## Plans (could be projects)
 
 ### General
-- refactor general build 
-- set up with sass
+- refactor general build (DONE)
+- set up with sass (DONE)
 
 ### Main nav
-- Figure out on a technical level (radio buttons? or as it is now with simple \<a>?)
+- Figure out on a technical level (radio buttons? or as it is now with simple \<a>?) (DONE -> using \<a>)
 - idea: animation, like elevating  
 
 ### Switch
