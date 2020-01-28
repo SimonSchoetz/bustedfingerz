@@ -51,6 +51,7 @@ aside {
    Right Section
 *******************/
 #artist-page {
+    
     header {
         display: flex;
         justify-content: flex-end;
@@ -58,7 +59,7 @@ aside {
         top: 0;
         margin-top: 1rem;/*Compensates nav-padding, Important to align,*/
         background-color: $color-invisible;
-        background-image: $bg-gradient;
+        background-image: $bg-gradient-se;
 
         nav {
             ul {
@@ -74,6 +75,11 @@ aside {
         }
         
     }
+    header.SE {
+        background-color: $color-invisible;
+        background-image: $bg-gradient-se;
+    }
+
     main {
         margin-top: 1rem;
         .home-page {
@@ -96,4 +102,9 @@ aside {
   
         
     }
+    
 }
+// .SE header {
+//         background-color: $color-invisible;
+//         background-image: $bg-gradient-se;
+//     }
