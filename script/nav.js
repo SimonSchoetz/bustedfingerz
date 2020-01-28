@@ -3,47 +3,52 @@
  * you have to iterate through them with a for loop
  */
 (() => {
-    const navFunction = fromNav => {
-        //fromNav = class name of the clicked nav button
-        const navInput = document.querySelector(`.${fromNav}`);
+    //Array of all nodeLists of all a in nav / Also calling eventListener below
+    const navNodeList = [...document.querySelectorAll("nav a")];
+    //Array of all nodeLists of all sections in main
+    const sectionNodeList = [...document.querySelectorAll("main section")];
+
+    const navFunction = function () {
+        //mainClass = class name of the clicked nav button
+        const mainClass = this.classList[0];
 
         //If clicked nav doesn't contain .active in its class list
-        if (!navInput.classList.contains("active")) {
+        if (!this.classList.contains("active")) {
             /**
             * Switch .active on click in the Nav
             */
-            //NodeList of all a in nav
-            const navNodeList = document.querySelectorAll("nav a");
-            //iterating nodeList
-            for (let i = 0; i < navNodeList.length; i++) {
-                const item = navNodeList[i].classList;
-                // check if classList contains "active" and delete it
-                if (item.contains("active")) {
-                    item.remove("active")
+            //traversing navNodeList
+            navNodeList.forEach(classList => {
+                const cl = classList.classList;
+                //Remove .active from former tab
+                if (cl.contains("active")) {
+                    cl.remove("active");
                 }
-                // when current classList = fromNav input, add "active"
-                if (item.contains(fromNav)) {
-                    item.add("active")
+                //Add .active to active tab
+                if (cl.contains(mainClass)) {
+                    cl.add("active");
                 }
+            })
 
-            }
             /**
             * Change display property on sections
             */
-            //NodeList of all sections in main
-            const sectionNodeList = document.querySelectorAll("main section");
-            //iterating nodeList
-            for (let i = 0; i < sectionNodeList.length; i++) {
-                const item = sectionNodeList[i].classList;
+            //traversing sectionNodeList
+            sectionNodeList.forEach(classList => {
+                const cl = classList.classList;
                 // check if classList contains .invisible and if not, add it
-                if (!item.contains("invisible")) {
-                    item.add("invisible")
+                if (!cl.contains("invisible")) {
+                    cl.add("invisible")
                 }
-                // when current classList = fromNav input, remove .invisible
-                if (item.contains(fromNav)) {
-                    item.remove("invisible")
+                // when current classList = this input, remove .invisible
+                if (cl.contains(mainClass)) {
+                    cl.remove("invisible")
                 }
-            }
+            })
+
         }
     }
+    navNodeList.forEach(array => {
+        array.addEventListener("click", navFunction);
+    })
 })();

@@ -1,7 +1,8 @@
 (() => {
+    const pageSwitch = document.querySelector("#switch");
 
-    const pageSwitch = () => {
-        const pageSwitch = document.querySelector("#switch");
+    const switchClasses = () => {
+
         const body = document.querySelector("body");
 
         if (pageSwitch.checked) {
@@ -23,6 +24,6 @@
         // -> show mastering nav & page
 
     }
-
+    pageSwitch.addEventListener("click", switchClasses);
 
 })();
