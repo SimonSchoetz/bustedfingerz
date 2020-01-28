@@ -1,7 +1,6 @@
 @use "variables" as *;
 
 nav {
-
     background-color: $color-invisible;
     a {
         border: 1px solid $color-main;
@@ -18,6 +17,7 @@ nav {
         &.active {
             border-width: 0;
             background-color: $bg-color;
+            // font-family: $mf-bold;
             &:hover {
                 color: $color-main;
                 cursor: context-menu;
@@ -25,6 +25,27 @@ nav {
         }
     }
 
-
 }
 
+//SE Page
+.SE {
+    nav {
+        a {
+            border: 1px solid $color-main-se;
+
+            &:hover {
+                background-color: $bg-bright;
+                color: black;
+            }
+
+            &.active {
+                border-width: 0;
+                background-color:  $bg-color-se;
+                &:hover {
+                    color: $color-main-se;
+                }
+            }
+        }
+        
+    }
+}

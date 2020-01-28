@@ -10,10 +10,16 @@
     color: $color-main;
     font-family: $mf-light;
     line-height: 1.3;
-    transition: 0.1s;
+    // transition: 0.1s;
+    
     
 }
 .SE {
-        color: $color-main-se;
-        background-color: $bg-color-se;
+    background-color: $bg-color-se;
+        * {
+            color: $color-main-se;
+            background-color: $bg-color-se;
+            }
+
+            
     }
