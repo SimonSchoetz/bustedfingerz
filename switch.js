@@ -5,7 +5,6 @@
         const body = document.querySelector("body");
 
         if (pageSwitch.checked) {
-            console.log("checked!")
             body.classList.add("SE")
         } else {
             body.classList.remove("SE")
