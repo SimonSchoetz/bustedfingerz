@@ -1,20 +1,29 @@
-const pageSwitch = () => {
-    const pageSwitch = document.querySelector("#switch");
+(() => {
 
-    if (pageSwitch.checked) {
-        console.log("checked!")
+    const pageSwitch = () => {
+        const pageSwitch = document.querySelector("#switch");
+        const body = document.querySelector("body");
+
+        if (pageSwitch.checked) {
+            console.log("checked!")
+            body.classList.add("SE")
+        } else {
+            body.classList.remove("SE")
+        }
+        // if (!pageSwitch.checked) {
+        //     console.log("unchecked!")
+        // }
+
+        // unchecked = 
+        // -> base / delete yet to make style class
+        // -> hide mastering page
+        // -> show artist page nav & content
+        // checked = 
+        // -> add yet to make style class
+        // -> hide artist page
+        // -> show mastering nav & page
+
     }
-    // if (!pageSwitch.checked) {
-    //     console.log("unchecked!")
-    // }
 
-    // unchecked = 
-    // -> base / delete yet to make style class
-    // -> hide mastering page
-    // -> show artist page nav & content
-    // checked = 
-    // -> add yet to make style class
-    // -> hide artist page
-    // -> show mastering nav & page
 
-}
+})();
