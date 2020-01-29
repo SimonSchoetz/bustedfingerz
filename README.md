@@ -8,8 +8,11 @@ This repo is to refine the Busted Fingerz website started in the orientation cou
 - like in a  \<form action="potential link text">?does this work? (-> React apparently will fix the url thing)
 - flickering BF logo casts light/shadow over the page
 - custom curser made of BF logo?
-- Aria-expended states for accessibility (or smth. similar)
 
+### Accessibility 
+
+- Aria-expended states to active menu buttons for accessibility (or smth. similar), get attribute (boolean)
+- fix :focus issue probably with JS (normal :focus also applies style when clicked, not only when tabbed)
 
 ## Plans (could be projects)
 

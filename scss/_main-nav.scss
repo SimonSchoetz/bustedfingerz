@@ -23,6 +23,10 @@ nav {
                 cursor: context-menu;
             }
         }
+        // &.active:focus {
+        //     background-color: $bg-dark;
+        //     color: $color-main-se;
+        // }
     }
 
 }
@@ -46,6 +50,10 @@ nav.SE {
                 color: $color-main-se;
             }
         }
+        // &.active:focus {
+        //     background-color: $bg-bright;
+        //     color: $color-main;
+        // }
         
         
     }
