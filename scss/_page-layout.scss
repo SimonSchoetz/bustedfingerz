@@ -89,7 +89,7 @@ aside {
             }
             div {
                 display: flex;
-                font-size: 1.3rem;
+                font-size: $fs-nav;
 
                 & p:first-child {
                     margin-right: 1rem;
@@ -104,7 +104,3 @@ aside {
     }
     
 }
-// .SE header {
-//         background-color: $color-invisible;
-//         background-image: $bg-gradient-se;
-//     }

@@ -1,0 +1,31 @@
+@use "variables" as *;
+
+noscript {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: $bg-alert;
+    padding: 1rem;
+    border: 1px solid rgb(164, 142, 46);
+    box-shadow: 0px 1px 10px rgb(164, 142, 46);
+
+    p {
+        background-color: $bg-alert;
+        &:first-child {
+            font-size: $fs-nav;
+        }
+        &:last-child{
+            a {
+                text-decoration-line: underline;
+                &:hover {
+                    background-color: $bg-darker;
+                    
+                }
+            }
+
+            &:not(a) {
+                font-family: $mf-bold;
+            }
+    }
+    }
+}

@@ -1,10 +1,11 @@
 /*Variables for Busted Website*/
 @use "typography" as *;
 /*********
-Font Stuff
+   Font
 *********/
 $mf-light: "MainFontLight";
 $mf-bold: "MainFontBold";
+$fs-nav: 1.3rem;
 /******************
   Color ArtistPage
 ******************/
@@ -24,3 +25,7 @@ $bg-color-se: rgb(41, 40, 41);
 $bg-brighter: rgba(250, 250, 250, 0.1);
 $bg-bright: rgba(250, 250, 250, 0.8);
 $bg-gradient-se: linear-gradient( $bg-color-se, $bg-color-se, $bg-color-se,$bg-color-se, $bg-color-se, rgba(255, 255, 0, 0));
+/*********************
+     Color noscript
+*********************/
+$bg-alert: rgb(255, 220, 64);
