@@ -28,25 +28,25 @@ nav {
 }
 
 //SE Page
-.SE {
-    nav {
-        $color-invisible: rgba(255, 255, 255, 0);
-        a {
-            border: 1px solid $color-main-se;
+nav.SE {
+    
+    background-color: $color-invisible;
+    a {
+        border: 1px solid $color-main-se;
 
+        &:hover {
+            background-color: $bg-bright;
+            color: black;
+        }
+
+        &.active {
+            border-width: 0;
+            background-color:  $bg-color-se;
             &:hover {
-                background-color: $bg-bright;
-                color: black;
-            }
-
-            &.active {
-                border-width: 0;
-                background-color:  $bg-color-se;
-                &:hover {
-                    color: $color-main-se;
-                }
+                color: $color-main-se;
             }
         }
+        
         
     }
 }
