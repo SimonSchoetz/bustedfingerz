@@ -11,6 +11,7 @@
     const navFunction = function () {
         //mainClass = class name of the clicked nav button
         const mainClass = this.classList[0];
+        const nav = document.querySelector(`.${mainClass}`);
 
         //If clicked nav doesn't contain .active in its class list
         if (!this.classList.contains("active")) {
@@ -19,14 +20,17 @@
             */
             //traversing navNodeList
             navNodeList.forEach(classList => {
+
                 const cl = classList.classList;
                 //Remove .active from former tab
                 if (cl.contains("active")) {
                     cl.remove("active");
+                    nav.setAttribute("aria-expanded", "false")
                 }
                 //Add .active to active tab
                 if (cl.contains(mainClass)) {
                     cl.add("active");
+                    nav.setAttribute("aria-expanded", "true")
                 }
             })
 
