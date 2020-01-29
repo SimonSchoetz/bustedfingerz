@@ -19,9 +19,9 @@
             * Switch .active on click in the Nav
             */
             //traversing navNodeList
-            navNodeList.forEach(classList => {
+            navNodeList.forEach(list => {
 
-                const cl = classList.classList;
+                const cl = list.classList;
                 //Remove .active from former tab
                 if (cl.contains("active")) {
                     cl.remove("active");

@@ -11,7 +11,7 @@ This repo is to refine the Busted Fingerz website started in the orientation cou
 
 ### Accessibility 
 
-- Aria-expanded states to active menu buttons for accessibility (or smt. similar), get attribute (boolean)
+- Aria-expanded states to active menu buttons for accessibility (or smt. similar), get attribute (boolean) (DONE)
 - fix :focus issue probably with JS (normal :focus also applies style when clicked, not only when tabbed)
 
 ### General
