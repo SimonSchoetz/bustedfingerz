@@ -82,6 +82,10 @@ aside {
 
     main {
         margin-top: 1rem;
+
+        section {
+            margin-bottom: 2rem;
+        }
         .home-page {
             img {
                 margin-bottom: 1rem;
@@ -96,15 +100,6 @@ aside {
                 }
             }
         }
-        section {
-            margin-bottom: 2rem;
-        }
-
-        .invisible {
-            display: none;
-        }
-  
-        
     }
     
 }
