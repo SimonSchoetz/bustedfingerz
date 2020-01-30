@@ -39,3 +39,11 @@ This repo is to refine the Busted Fingerz website started in the orientation cou
 ### Mobile Version
 
 - get even started with it
+
+### Final Checklist
+- Accessibility (aria)
+- security (target=_blank && rel=noopener)
+- html validator
+- css validator
+- js compiler for older browsers
+- css compiler for other and older browsers
